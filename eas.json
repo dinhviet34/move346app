@@ -1,0 +1,24 @@
+{
+    "build": {
+      "preview": {
+        "android": {
+          "buildType": "apk"
+        },
+        "ios": {
+          "enterpriseProvisioning": "universal"
+        }
+      },
+      "preview2": {
+        "android": {
+          "gradleCommand": ":app:assembleRelease"
+        }
+      },
+      "preview3": {
+        "developmentClient": true
+      },
+      "production": {}
+    },
+    "cli": {
+      "version": ">= 3.8.1"
+    }
+  }

@@ -1,0 +1,76 @@
+{
+  "expo": {
+    "name": "Move346",
+    "slug": "move346",
+    "description": "Chuong trinh Move346 mobile",
+    "version": "4.8.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "androidStatusBar": {
+      "backgroundColor": "#FFF",
+      "translucent": false
+    },
+    "plugins": [
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Cho phép chương trình truy cập đến document để thực hiện việc lưu trữ file chức năng lưu chữ file."
+        }
+        
+      ],
+      [
+        "expo-camera",
+        {
+        "cameraPermission": "Chương trình cần được sử dụng camera để thực hiện việc chụp ảnh và đối chiếu khuôn mặt với hình ảnh khuôn mặt gốc cho chức năng chấm công."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Chương trình cần quyền truy cập thư viện hình ảnh để có thể thực hiện việc lưu trữ ảnh chức năng lưu trữ file."
+        }
+      ]
+    ],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hotdog101.Move346",
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "infoPlist":{
+        "NSCameraUsageDescription":"Chương trình cần được sử dụng camera để thực hiện việc chụp ảnh và đối chiếu khuôn mặt với hình ảnh khuôn mặt gốc cho chức năng chấm công",
+        "NSPhotoLibraryUsageDescription":"Chương trình cần quyền truy cập thư viện hình ảnh để có thể thực hiện việc lưu trữ ảnh chức năng lưu trữ file",
+        "NSLocationWhenInUseUsageDescription":"Chương trình sử dụng vị trí của bạn khi thực hiện chức năng chấm công để đối chiếu với vị trí điểm được phép chấm công hợp lệ",
+        "NSPhotoLibraryAddUsageDescription":"Chương trình cần quyền truy cập thư viện hình ảnh để có thể thực hiện việc lưu trữ ảnh chức năng lưu trữ file"
+      }
+
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.hotdog101.Move346"
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "30f42281-7a3e-4171-8b4a-88f239fd6279"
+      }
+    }
+  }
+}
